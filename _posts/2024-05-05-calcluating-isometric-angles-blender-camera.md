@@ -3,7 +3,7 @@ layout: post
 title: "Calculating Isometric Angles From Blender Cameras"
 description: ""
 category: programming
-tags: [javascript, js, web, programming, blender, mathematics]
+tags: [javascript, programming, blender, mathematics]
 ---
 
 One of my favourite styles of illustration is without a doubt Isometric. What characterizes isometric art is that, unlike with normal perspective-based art with perspective lines that converge, the perspective lines in an isometric piece are completely parallel. A typical isometric scene illustrates the inside of some room or some building.
