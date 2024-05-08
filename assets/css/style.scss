@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.tag_box {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
