@@ -1,0 +1,81 @@
+---
+layout: page
+title: "isometric angles calculator"
+description: ""
+include_jquery: true
+---
+
+<p><a href="/programming/2024/05/05/calcluating-isometric-angles-blender-camera">Explanation for what this calculates here.</a> In short, this page calculates, from a given Blender camera angle for an orthographic or isometric camera, how the angles and proportions of x,y,z sides will come out in a 2d image.</p>
+
+
+<h2>Blender Camera Angles:</h2>
+<p>Insert values between 0 and 90. Normal values for X and Z, for a perfect isometric projection, are 54.736° and 45°.</p>
+<p></p>
+<table style="width:auto">
+<form id="anglecalculator">
+	<tbody>
+		<tr>
+			<td>X°</td>
+			<td><input type="text" name="xdeg"></td>
+		</tr>
+		<tr>
+			<td>Z°</td>
+			<td><input type="text" name="zdeg"></td>
+		</tr>
+		<tr>
+			<td>
+				<button>submit</button>
+			</td>
+		</tr>
+	</tbody>
+</form>
+</table>
+
+<div id="results" style="display: none">
+	<table>
+		<thead>
+			<tr>
+				<td>Projected angles</td>
+				<td style="opacity: 0.4">(rounded to 3 decimals)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>X° (red angle in image below)</td>
+				<td id="xangleresult"></td>
+			</tr>
+			<tr>
+				<td>Y° (blue angle in image below)</td>
+				<td id="yangleresult"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table>
+		<thead>
+			<tr>
+				<td>Proportional projected lengths</td>
+				<td style="opacity: 0.4">(rounded to 3 decimals)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>X</td>
+				<td id="xlength"></td>
+			</tr>
+			<tr>
+				<td>Y</td>
+				<td id="ylength"></td>
+			</tr>
+			<tr>
+				<td>Z</td>
+				<td id="zlength"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<img src="{{ site.url }}/assets/images/blender-isometric.jpg" alt="isometric angle illustration">
+</div>
+
+
+<script src="{{ site.url }}/isometric/isometric.js"></script>

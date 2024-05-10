@@ -6,6 +6,12 @@ category: programming
 tags: [javascript, programming, blender, mathematics]
 ---
 
+If you don't want to read, you just want to use the calculations, go straight here:
+
+[Camera-to-2d-calculator]({{ site.url }}/isometric)
+
+---
+
 One of my favourite styles of illustration is without a doubt Isometric. What characterizes isometric art is that, unlike with normal perspective-based art with perspective lines that converge, the perspective lines in an isometric piece are completely parallel. A typical isometric scene illustrates the inside of some room or some building.
 
 ![isometric image example](https://miro.medium.com/v2/resize:fit:2000/1*Fwxd15gCD7moqaLyCH7lDw.jpeg)
@@ -27,3 +33,7 @@ So, that's exactly what I did [here](https://jsfiddle.net/3aqew0c9/3/) -- plug i
 ![angle illustration]({{ site.url }}/assets/images/blender-isometric.jpg)
 
 Fun fact: it matters in what order you do the rotations. Rotating X -54.736 and then Z -45 produces a different result than doing Z and then X.
+
+The final result of all these calculations, synthesized into a UI, can be found here:
+
+[Camera-to-2d-calculator]({{ site.url }}/isometric)
